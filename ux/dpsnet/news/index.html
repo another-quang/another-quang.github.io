@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>DPS News | Australian Parliament House </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,800,400|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+  <link href="../assets/stylesheets/main.css" rel="stylesheet" type="text/css" />
+  <script src="../assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
+  <script src="../assets/javascripts/vendor/d3.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+  <header>
+  <div class="row">
+    <div class="columns">
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="large-3 columns">
+      <div class="padding-right">
+        <h1>
+<a href="../index.html">            <img src="../assets/images/dps-logo-inline.svg" />
+</a>        </h1>
+      </div>
+    </div>
+
+    <div class="large-9 columns">
+      <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span>Menu</span></a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <ul id="main-nav">
+            <li class="home"><a href="../index.html">Home</a></li>
+            <li class="has-dropdown"><a href="../our-department/index.html">Our Department</a></li>
+            <li class="has-dropdown"><a href="../our-services/index.html">Our Services</a></li>
+            <li class="has-dropdown"><a href="../policies-and-guidelines/index.html">Policies and Guidelines</a></li>
+            <li class="has-dropdown"><a href="../forms/index.html">Forms</a></li>
+            <li class="has-dropdown"><a href="../resources/index.html">Resources</a></li>
+            <li class="has-dropdown"><a href="../publications/index.html">Publications</a></li>
+            <li class="has-dropdown"><a href="../this-site/index.html">This Site</a></li>
+            <!-- <li class="has-dropdown">
+              <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul class="dropdown">
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li> -->
+            <li><a href="" class="search__toggle"><i class="fa fa-search"></i></a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- <div class="large-6 columns">
+      <div class="nav-top-links-container">
+        <nav class="nav-top-links">
+          <ul class="inline-block-list text-small">
+            <li class="has-form">
+              <select>
+                <option value="all" selected="selected">All</option>
+                <option value="form">Forms</option>
+                <option value="policy">Policy</option>
+                <option value="directory">People</option>
+              </select>
+              <input type="text" placeholder="Search people, forms, documents ...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </li>
+            <li class="has-dropdown">
+              <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul id="drop1" class="f-dropdown" data-dropdown-content>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- <div class="contain-to-grid">
+    <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon">
+          <a href="#"><span>Menu</span></a>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul id="main-nav" class="right">
+          <li class="home"><a href="../index.html">Home</a></li>
+          <li class="has-dropdown"><a href="../our-department/index.html">Our Department</a></li>
+          <li class="has-dropdown"><a href="../our-services/index.html">Our Services</a></li>
+          <li class="has-dropdown"><a href="/policies-and-advices/index.html">Policies and Advices</a></li>
+          <li class="has-dropdown"><a href="../forms/index.html">Forms</a></li>
+          <li class="has-dropdown"><a href="../resources/index.html">Resources</a></li>
+          <li class="has-dropdown"><a href="../publications/index.html">Publications</a></li>
+          <li class="has-dropdown"><a href="../this-site/index.html">This Site</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+            <ul class="dropdown">
+              <li><a href="">Profile</a></li>
+              <li><a href="">Sign out</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="search__toggle--fullscreen"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+  </div> -->
+</header>
+
+<div class="search__container">
+  <div class="row">
+    <div class="large-6 large-centered columns">
+      <div class="row collapse">
+        <div class="small-9 columns">
+          <input id="search" type="text" placeholder="Search people, forms, documents ...">
+        </div>
+        <div class="small-1 columns">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="small-2 columns">
+          <select>
+            <option value="all" selected="selected">All</option>
+            <option value="form">Forms</option>
+            <option value="policy">Policy</option>
+            <option value="directory">People</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <p class="margin-top text-subtitle text-center text-small">Type in keywords and press <strong>Enter</strong> to search. Use the <strong>dropdown</strong> to search within a specific topic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="columns">
+        <h1 class="text-center">DPS News</h1>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="row">
+    <div class="large-10 large-centered columns padding-medium">
+      <div class="text-right right">
+  <ul class="button-group round">
+    <li><a href="#" class="add-to-favourites button tiny muted"><i class="fa fa-fw fa-star-o"></i></a></li>
+    <li>
+      <a href="" data-reveal-id="modal-share" class="button tiny muted"><i class="fa fa-fw fa-share-alt"></i></a>
+      <div id="modal-share" class="reveal-modal tiny" data-reveal>
+        <h2>Share</h2>
+        <!-- <button class="facebook button"><i class="fa fa-fw fa-lg fa-facebook"></i> Share on Facebook</button><br/>
+        <button class="twitter button"><i class="fa fa-fw fa-lg fa-twitter"></i> Share on Twitter</button><br/> -->
+        <button data-reveal-id="modal-email" class="mail button"><i class="fa fa-fw fa-lg fa-envelope-o"></i> Email</button>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="modal-email" class="reveal-modal tiny" data-reveal>
+        <h2>Email</h2>
+        <form action="">
+          <input type="text" placeholder="Email addresses">
+          <p><strong>Subject:</strong> DPS News</p>
+          <textarea name="" placeholder="Your message" rows="10" cols="60" placeholder="Your message">Your message &#10;&#10;&#10;Link&#10;/news/index.html</textarea>
+          <button type="submit" class="button small">Send</button>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </li>
+    <!-- <li><a href="#" class="button tiny"><i class="fa fa-fw fa-print"></i></a></li> -->
+  </ul>
+</div>
+
+      <div class="breadcrumbs-container">
+  <nav class="breadcrumbs"><a href="../index.html">Home</a> <span class="current">DPS News</span></nav>
+</div>
+
+      <article>
+        <div class="row">
+  <div class="large-3 large-push-9 columns">
+    
+<div class="margin-bottom">
+  <div class="filter__container">
+    <h3>Filter by</h3>
+    <h4><strong>Date</strong></h4>
+    <ul class="expandable-list">
+      <li class="has-expandable">
+        <a href="">2016</a>
+        <ul class="expandable">
+          <li><a href="index.html">March (4)</a></li>
+          <li><a href="index.html">February (8)</a></li>
+          <li><a href="index.html">January (9)</a></li>
+        </ul>
+      </li>
+      <li class="has-expandable">
+        <a href="">2015</a>
+        <ul class="expandable">
+          <li><a href="index.html">December (8)</a></li>
+          <li><a href="index.html">November (10)</a></li>
+          <li><a href="index.html">October (7)</a></li>
+          <li><a href="index.html">September (6)</a></li>
+          <li><a href="index.html">August (5)</a></li>
+          <li><a href="index.html">July (3)</a></li>
+          <li><a href="index.html">Jun (2)</a></li>
+          <li><a href="index.html">May (5)</a></li>
+          <li><a href="index.html">April (3)</a></li>
+          <li><a href="index.html">March (3)</a></li>
+          <li><a href="index.html">February (5)</a></li>
+          <li><a href="index.html">January (7)</a></li>
+        </ul>
+      </li>
+      <li class="has-expandable">
+        <a href="">2014</a>
+        <ul class="expandable">
+          <li><a href="index.html">December (8)</a></li>
+          <li><a href="index.html">November (10)</a></li>
+          <li><a href="index.html">October (9)</a></li>
+          <li><a href="index.html">September (2)</a></li>
+          <li><a href="index.html">August (4)</a></li>
+          <li><a href="index.html">July (6)</a></li>
+          <li><a href="index.html">Jun (1)</a></li>
+          <li><a href="index.html">May (10)</a></li>
+          <li><a href="index.html">April (1)</a></li>
+          <li><a href="index.html">March (3)</a></li>
+          <li><a href="index.html">February (6)</a></li>
+          <li><a href="index.html">January (6)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+  <div class="large-9 large-pull-3 columns">    
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_07.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Velit distinctio dolores odio et ipsam fugiat itaque beatae qui</a></h3>
+    <p class="media-object__summary text-small">Aut at qui aut ex et harum ea quis assumenda totam. dolor laborum expedita temporibus quae debitis neque odit assumenda nulla repellendus quo. totam et ut qui</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Newsletter</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_01.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Sit atque rerum quis cum cupiditate numquam repudiandae quasi nihil</a></h3>
+    <p class="media-object__summary text-small">Officiis rem tempora voluptatibus. sint animi impedit alias est laborum eaque architecto quis cumque odit iusto non porro. facere ut eveniet molestiae ea cupiditate porro architecto iste aliquid repudiandae dolorem. molestiae aliquam enim quia commodi blanditiis dolores</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">HR</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_07.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Velit aut quos unde doloribus hic eos error sit non</a></h3>
+    <p class="media-object__summary text-small">Nisi amet aut ut et minima perspiciatis omnis assumenda praesentium velit voluptatem. voluptates vero necessitatibus dicta vero ea rerum a fuga. quia repellendus tempora ea est velit aut dolores. quas cupiditate eos optio aut tenetur ut earum debitis</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">HR</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_07.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Illo quo necessitatibus id magni exercitationem blanditiis dolores maiores explicabo</a></h3>
+    <p class="media-object__summary text-small">Accusantium ratione ut dolorem fugiat aut magni. aut et totam doloribus. nemo vero quo sunt vero. laudantium sint quas in non odit</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Projects</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_07.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Rerum iusto eos molestiae quae repellendus ex est provident nihil</a></h3>
+    <p class="media-object__summary text-small">Quis enim quisquam dolores recusandae consequatur soluta magni tempora voluptas maxime velit autem. placeat autem voluptas architecto et a. quam dolorum omnis vero veniam nostrum et quia aut omnis quo necessitatibus. quia aperiam at et asperiores modi excepturi eligendi quisquam numquam et est facilis</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Newsletter</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_05.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Omnis molestias minima unde suscipit quis maiores ut eligendi qui</a></h3>
+    <p class="media-object__summary text-small">Veritatis repellat est cupiditate ipsa sed ut veritatis quia eligendi ratione aut tenetur. quos quam et assumenda ea voluptatem delectus quia aut nesciunt. harum facere occaecati excepturi quisquam quisquam adipisci saepe corporis veniam molestiae quisquam omnis in provident. iure eveniet et voluptas animi quam temporibus repellat tempora sit perspiciatis sed excepturi consequatur pariatur. ea qui sint nesciunt aut magni fugit enim quidem error</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">News</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_01.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Aliquid esse quos quos id corporis qui numquam sit consequatur</a></h3>
+    <p class="media-object__summary text-small">Aliquam magnam sed eos consequuntur excepturi delectus perspiciatis non architecto. non quaerat voluptate consequatur qui sed. aut sit voluptatem ea hic dolor blanditiis aut dolor atque commodi pariatur et odio impedit</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Newsletter</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_10.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Fuga aliquid ut id reprehenderit quia exercitationem quo explicabo quae</a></h3>
+    <p class="media-object__summary text-small">Quaerat labore quas corporis facere et modi. sit explicabo natus quibusdam odio distinctio aut. omnis error sequi id. voluptas architecto at et quo. quod labore quia quia et non qui aut et odit. pariatur deleniti qui et reiciendis eligendi laudantium maxime veritatis fuga aut similique. debitis pariatur quia sed et vel reiciendis sunt fuga iste</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Newsletter</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_06.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Enim vel et est voluptas sunt totam nihil assumenda exercitationem</a></h3>
+    <p class="media-object__summary text-small">Quidem id sapiente quos dolor vel et voluptas. vero repellendus debitis id voluptas adipisci et beatae veritatis a in corrupti. repellat et id soluta et corrupti omnis unde voluptas dignissimos eligendi exercitationem tenetur et suscipit. rerum natus iste inventore et doloremque dignissimos. pariatur provident omnis id odit qui et id consequatur tempora. temporibus debitis omnis quo ipsum nulla</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">Projects</a></em>
+    </div>
+  </div>
+</div>
+
+      
+<div class="media-object">
+  <div class="media-object__section">
+    <a href="single.html"><img src="../assets/images/placeimg_150_90_tech_09.jpg" /></a>
+  </div>
+
+  <div class="media-object__section">
+    <h3><a href="single.html">Molestiae sunt neque at dicta quas quasi quod ut nisi</a></h3>
+    <p class="media-object__summary text-small">Pariatur nihil soluta ut rerum aut ut animi sit et porro at. nihil sunt molestiae aspernatur ut tenetur in odio illo cum repudiandae et. blanditiis commodi tenetur blanditiis consectetur occaecati asperiores et exercitationem a incidunt</p>
+    <div class="media-object__metadata text-small">
+      <em>Posted 10 hours ago in <a href="#">News</a></em>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="columns">
+    <ul class="pagination">
+  <li class="arrow unavailable"><a href="">&laquo;</a></li>
+  <li class="current"><a href="">1</a></li>
+  <li><a href="">2</a></li>
+  <li><a href="">3</a></li>
+  <li><a href="">4</a></li>
+  <li class="unavailable"><a href="">&hellip;</a></li>
+  <li><a href="">9</a></li>
+  <li><a href="">10</a></li>
+  <li class="arrow"><a href="">&raquo;</a></li>
+</ul>
+
+  </div>
+</div>
+
+      </article>
+      
+      <div class="row">
+  <div class="columns">
+    <div class="border-top">
+      <p class="text-small text-subtitle">Last modified: 8 Aug 2015, 15:30<br/>
+      Communications section, DPS</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+   <!-- .prefooter -->
+<div class="prefooter margin-leader padding-medium">
+  <div class="row">
+    <div class="small-6 large-2 columns">
+      <h3>Our Department</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">DPS Executive</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Chief Information Officer</a></li>
+        <li><a href="#">Chief Executive Officer</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Message from the Secretary</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Our Services</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Human Resources</a></li>
+        <li><a href="#">Finance</a></li>
+        <li><a href="#">Procurement</a></li>
+        <li><a href="#">Record Management</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Library Services</a></li>
+        <li><a href="#">Communications</a></li>
+        <li><a href="#">Building Services</a></li>
+        <li><a href="#">2020 Helpdesk</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Policies and Advices</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All policies and advices</a></li>
+        <li><a href="#">Governance Papers</a></li>
+        <li><a href="#">Financial Papers</a></li>
+        <li><a href="#">Human Resources Papers</a></li>
+      </ul>
+
+      <h3>Publications</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Circulars</a></li>
+        <li><a href="#">DPS Winter Photography Competition</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Forms</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All forms</a></li>
+        <li><a href="#">Finance forms</a></li>
+        <li><a href="#">Procurement forms</a></li>
+        <li><a href="#">Human Resources forms</a></li>
+        <li><a href="#">Computer Account forms</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Resources</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Architects Design Intent</a></li>
+        <li><a href="#">Building Maps</a></li>
+        <li><a href="#">DPS Style Guide</a></li>
+        <li><a href="#">DPS Document Templates</a></li>
+        <li><a href="#">Office Furniture Style Guide</a></li>
+        <li><a href="#">Parliamentary Sitting</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>This site</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">About this site</a></li>
+        <li><a href="#">Report a content issue</a></li>
+        <li><a href="#">The site governance</a></li>
+        <li><a href="#">Content publishers</a></li>
+        <li><a href="#">Give us your feedback</a></li>
+        <li><a href="#">The Communications team</a></li>
+        <li><a href="#">The Web Applications team</a></li>
+      </ul>
+
+      <h3>Connect with us</h3>
+      <ul class="inline-list">
+        <li><a href=""><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="padding-medium">
+  <div class="row">
+    <div class="medium-10 columns">
+      <ul class="inline-list text-small">
+            <li><a href="../accessibility-information.html">Accessibility information</a></li>
+            <li><a href="../copyright-information.html">Copyright information</a></li>
+            <li><a href="../disclaimer.html">Disclaimer</a></li>
+            <li><a href="../feedback.html">Feedback</a></li>
+            <li><a href="../help.html">Help</a></li>
+        <li><a href="/__middleman/sitemap/">Sitemap</a></li>
+        <li><a href="">A-Z Index</a></li>
+      </ul>
+    </div>
+
+    <div class="medium-2 columns text-small text-right">
+      <a href="#" id="back-to-top">Back to top <i class="fa fa-fw fa-angle-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/javascripts/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/fastclick.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/holder.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/slick.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/countUp.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/foundation.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/jquery.scrollNav.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/vendor/jquery.jqcloud.min.js" type="text/javascript"></script>
+<script src="../assets/javascripts/main.js" type="text/javascript"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//p59741/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//p59741/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

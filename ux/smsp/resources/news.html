@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>News | Senators and Members Service Portal</title>
+  <meta name="description" content="[#<Proc:0x0000000555d110@c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/padrino-helpers-0.13.1/lib/padrino-helpers/output_helpers.rb:146>]">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="../stylesheets/app.css" rel="stylesheet" />
+</head>
+
+  <body class="resources resources_news">
+    <header class="padding-small">
+  <div class="row">
+    <div class="columns">
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="medium-4 columns">
+      <h1>
+<a href="../">          <img src="../images/smsp-logo.svg" />
+          <span class="logo__text">
+            Senators' and Members' Service Portal
+          </span>
+</a>      </h1>
+    </div>
+
+    <div class="medium-5 columns">
+      <form class="search__container" action="../search/">
+        <label htmlFor="search" class="show-for-sr">Search</label>
+        <input
+          id="search"
+          class="input-group-field"
+          type="text"
+          placeholder="Please enter search terms ..."
+        />
+        <button type="submit" class="button postfix"><i class="fa fa-fw fa-search"></i></button>
+        <select>
+          <option value="smsp" selected="selected">This site</option>
+          <option value="aph">aph.gov.au</option>
+          <option value="parlinfo">Parlinfo</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="medium-2 columns">
+      <nav class="top-bar top-bar--header" role="navigation">
+        <section class="top-bar-section">
+          <ul class="right">
+            <li class="has-dropdown">
+              <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul class="dropdown">
+                <li><a href="../profile/">Favourites</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<div class="contain-to-grid">
+  <div class="theme-background"></div>
+  <nav id="main-nav" class="top-bar top-bar--body" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name"></li>
+      <li class="toggle-topbar">
+        <a href="#"><span>Browse by Topics</span></a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <div class="show-for-medium-up left browse-text">
+        Browse by Topics
+      </div>
+      <ul id="main-nav" class="left">
+        <li class="has-dropdown"><a href="#">Organisation</a><ul class="dropdown"><li class=""><a href="../organisation/department-of-parliamentary-services.html">Department of Parliamentary Services</a><ul class="dropdown"></ul></li><li class=""><a href="../organisation/department-of-the-house-of-representatives.html">Department of the House of Representatives</a><ul class="dropdown"></ul></li><li class=""><a href="../organisation/department-of-the-senate.html">Department of the Senate</a><ul class="dropdown"></ul></li><li class=""><a href="../organisation/finance.html">Finance</a><ul class="dropdown"></ul></li><li class=""><a href="../organisation/library.html">Library</a><ul class="dropdown"></ul></li><li class=""><a href="../organisation/parliamentary-budget-office.html">Parliamentary Budget Office</a><ul class="dropdown"></ul></li></ul></li>
+        <li class="has-dropdown"><a href="#">Services</a><ul class="dropdown"><li class=""><a href="../services/chamber-documents.html">Chamber documents</a><ul class="dropdown"></ul></li><li class=""><a href="../services/food-and-beverage.html">Food and beverage</a><ul class="dropdown"></ul></li><li class=""><a href="../services/retail-services.html">Retail services</a><ul class="dropdown"></ul></li></ul></li>
+        <li class="has-dropdown active"><a href="#">Resources</a><ul class="dropdown"><li class=""><a href="publication.html">Publication</a><ul class="dropdown"></ul></li><li class=""><a href="research.html">Research</a><ul class="dropdown"></ul></li><li class=""><a href="document.html">Document</a><ul class="dropdown"></ul></li><li class=""><a href="chamber-live.html">Chamber Live</a><ul class="dropdown"></ul></li><li class=""><a href="news.html">News</a><ul class="dropdown"></ul></li></ul></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+    <div class="row" id="content">
+      <div class="columns">
+        
+<div class="row bg--white shadow--light padding-medium">
+  <div class="columns">
+    <div class="breadcrumbs-container margin-bottom-large">
+      <nav class="breadcrumbs"><a href="/">Home</a> <a href="/resources/">Resources</a> <span class="current">News</span></nav>
+    </div>
+  </div>
+  <div class="medium-3 columns">
+    <div class="filter__container">
+      <h2 class="text-highlight">Refine results</h2>
+      <div class="filter__header">
+  <h3>Organisation</h3>
+</div>
+<input id="org-dps" type="checkbox" /><label for="org-dps">Department of Parliamentary Services</label>
+<input id="org-reps" type="checkbox" /><label for="org-reps">Department of the House of Representatives</label>
+<input id="org-senate" type="checkbox" /><label for="org-senate">Department of the Senate</label>
+<input id="org-finance" type="checkbox" /><label for="org-finance">Finance</label>
+<input id="org-library" type="checkbox" /><label for="org-library">Library</label>
+<input id="org-pbo" type="checkbox" /><label for="org-pbo">Parliamentary Budget Office</label>
+
+      <div class="filter__header">
+  <h3>Services</h3>
+  <input id="function-chamberdoc" type="checkbox" /><label for="function-chamberdoc">Chamber documents</label>
+  <input id="function-food" type="checkbox" /><label for="function-food">Food and beverage</label>
+  <input id="function-retail" type="checkbox" /><label for="function-retail">Retail services</label>
+</div>
+
+      <div class="filter__header">
+        <h3>Resources</h3>
+        <input id="selection" type="checkbox" checked="checked" disabled /><label for="selection">News</label>
+      </div>
+      <div class="margin-bottom"></div>
+      <a class="filter__reset margin-top" href="#">Reset filters</a>
+    </div>
+  </div>
+  <div class="medium-9 columns border-left">
+    <div class="padding-horizontal">
+      <h1 class="margin-bottom-large"><i class="fa fa-fw fa-bookmark"></i> News</h1>
+      <p><strong>Found 24 results</strong></p>
+      <div class="row">
+  <div class="columns">
+    <h2 class="margin-bottom">Organisation</h2>
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-building-o"></i> Department of Parliamentary Services</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Beatae ducimus et et dolorem qui et vitae rerum qui</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-star text-highlight" title="Bookmarked link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">publication</a>, <a href="#">news</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-rajtk" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-rajtk" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Remove from favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Quam ullam hic dolor qui deserunt placeat consequatur doloremque est</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-star text-highlight" title="Bookmarked link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">news</a>, <a href="#">pbo</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-f90ce" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-f90ce" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Remove from favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Molestias neque pariatur minima a quo nemo molestiae voluptate laboriosam</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">document</a>, <a href="#">finance</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-vtvej" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-vtvej" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-building-o"></i> Department of the House of Representatives</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Tenetur unde temporibus iusto est est autem optio dolore sed</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">chamber</a>, <a href="#">finance</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-6xqgr" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-6xqgr" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Animi totam inventore debitis ut maiores ut vel ullam molestias</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">chamber</a>, <a href="#">document</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-qmym3" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-qmym3" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Sit id nobis totam cum fugiat fugiat rerum voluptatem qui</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">pbo</a>, <a href="#">finance</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-ujuv4" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-ujuv4" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-building-o"></i> Department of the Senate</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Ex perferendis explicabo sunt est quasi amet perferendis alias voluptatum</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">publication</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-mjqmd" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-mjqmd" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Molestiae illo tempore nam dolores recusandae provident vel aut provident</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">dps</a>, <a href="#">news</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-iihhm" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-iihhm" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Rerum deleniti sed enim nemo et est dolore consequatur rem</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">research</a>, <a href="#">pbo</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-vlbwn" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-vlbwn" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+      <hr>
+      <div class="row">
+  <div class="columns">
+    <h2 class="margin-bottom">Services</h2>
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-file-text-o"></i> Chamber documents</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Tempore corporis perspiciatis perferendis doloremque eos nobis quisquam excepturi iusto</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">research</a>, <a href="#">news</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-ihype" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-ihype" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Quia vel vero ex voluptates vero ea enim eos voluptates</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">senate</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-sneqm" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-sneqm" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Quam ipsa quos natus culpa itaque recusandae vel ducimus in</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">publication</a>, <a href="#">pbo</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-sbj5w" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-sbj5w" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-cutlery"></i> Food and beverages</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Quis labore et saepe repellat vel veritatis minus sunt expedita</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-star text-highlight" title="Bookmarked link"></i>
+      </span>
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">retail</a>, <a href="#">finance</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-1h7l7" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-1h7l7" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Remove from favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Quod enim dolores hic omnis mollitia quod ut et et</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">chamber</a>, <a href="#">document</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-brkko" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-brkko" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Dolor magni possimus magni voluptatem vel corrupti tempore eius harum</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">publication</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-mr9vh" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-mr9vh" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="medium-4 columns">
+    <h4><i class="fa fa-fw fa-shopping-bag"></i> Retail services</h4>
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Nesciunt culpa doloribus perspiciatis ipsum in quia perferendis rerum eligendi</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">document</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-g6ig3" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-g6ig3" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Ut hic reiciendis adipisci magnam quia est et delectus praesentium</a></p>
+  <div class="result__metadata">
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">chamber</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-4x6k0" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-4x6k0" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+<div class="result__container border-bottom">
+  <p><a href="#">Eaque nulla quis accusamus impedit laboriosam earum voluptate reiciendis ipsum</a></p>
+  <div class="result__metadata">
+      <span>
+        <i class="fa fa-fw fa-external-link" title="External link"></i>
+      </span>
+    <span>
+      <i class="fa fa-fw fa-bookmark-o"></i>
+      <em>
+        <a href="#">library</a>
+      </em>
+    </span>
+    <div class="result__more">
+      <a href="#" data-dropdown="dropdown-ahkb2" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-ellipsis-v fa-sharp"></i></a>
+      <ul id="dropdown-ahkb2" class="f-dropdown tiny" data-dropdown-content aria-hidden="true" tabindex="-1">
+          <li><a href="#" class="more__favourite">Add to favourite</a></li>
+        <li><a href="#"  data-reveal-id="modal-report-link" class="more__report">Report link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+  <footer>
+  <div class="row">
+    <div class="columns padding-medium">
+      <ul class="inline-list text-small">
+          <li><a href="../accessibility-information.html">Accessibility information</a></li>
+          <li><a href="../copyright-information.html">Copyright information</a></li>
+          <li><a href="../disclaimer.html">Disclaimer</a></li>
+          <li><a href="../feedback.html">Feedback</a></li>
+          <li><a href="../help.html">Help</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div id="modal-report-link" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <form action="">
+    <div class="modal__header">
+      <h3>Report link</h3>
+    </div>
+    <div class="modal__content">
+      <dl class="">
+        <dt>Link title</dt>
+        <dd><a href="">Aspernatur Ut Est Neque Eum Et Harum Dolor</a></dd>
+        <dt>Issue</dt>
+        <dd><textarea name="name" rows="8" cols="40" placeholder="Type in a few words describing your issue with the link ..."></textarea></dd>
+      </dl>
+    </div>
+    <div class="modal__content">
+      <button class="button round small">Submit</button>
+      <button class="button round small secondary modal-close">Cancel</button>
+    </div>
+  </form>
+</div>
+
+
+<a href="#" id="back-to-top" class="button--round" title="Back to top"><i class="fa fa-fw fa-angle-up"></i><span class="show-for-sr">Back to top</span></a>
+
+<script src="../javascripts/vendor/jquery.js"></script>
+<script src="../javascripts/vendor/fastclick.js"></script>
+<script src="../javascripts/vendor/foundation.min.js"></script>
+<script src="../javascripts/main.js"></script>
+
+</html>

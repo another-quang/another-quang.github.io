@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Home | Australian Parliament House </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,800,400|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+  <link href="assets/stylesheets/main.css" rel="stylesheet" type="text/css" />
+  <script src="assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
+  <script src="assets/javascripts/vendor/d3.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+  <header>
+  <div class="row">
+    <div class="columns">
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="large-3 columns">
+      <div class="padding-right">
+        <h1>
+<a href="index.html">            <img src="assets/images/dps-logo-inline.svg" />
+</a>        </h1>
+      </div>
+    </div>
+
+    <div class="large-9 columns">
+      <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span>Menu</span></a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <ul id="main-nav">
+            <li class="home active"><a href="index.html">Home</a></li>
+            <li class="has-dropdown"><a href="our-department/index.html">Our Department</a></li>
+            <li class="has-dropdown"><a href="our-services/index.html">Our Services</a></li>
+            <li class="has-dropdown"><a href="policies-and-guidelines/index.html">Policies and Guidelines</a></li>
+            <li class="has-dropdown"><a href="forms/index.html">Forms</a></li>
+            <li class="has-dropdown"><a href="resources/index.html">Resources</a></li>
+            <li class="has-dropdown"><a href="publications/index.html">Publications</a></li>
+            <li class="has-dropdown"><a href="this-site/index.html">This Site</a></li>
+            <!-- <li class="has-dropdown">
+              <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul class="dropdown">
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li> -->
+            <li><a href="" class="search__toggle"><i class="fa fa-search"></i></a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- <div class="large-6 columns">
+      <div class="nav-top-links-container">
+        <nav class="nav-top-links">
+          <ul class="inline-block-list text-small">
+            <li class="has-form">
+              <select>
+                <option value="all" selected="selected">All</option>
+                <option value="form">Forms</option>
+                <option value="policy">Policy</option>
+                <option value="directory">People</option>
+              </select>
+              <input type="text" placeholder="Search people, forms, documents ...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </li>
+            <li class="has-dropdown">
+              <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul id="drop1" class="f-dropdown" data-dropdown-content>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- <div class="contain-to-grid">
+    <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon">
+          <a href="#"><span>Menu</span></a>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul id="main-nav" class="right">
+          <li class="home active"><a href="index.html">Home</a></li>
+          <li class="has-dropdown"><a href="our-department/index.html">Our Department</a></li>
+          <li class="has-dropdown"><a href="our-services/index.html">Our Services</a></li>
+          <li class="has-dropdown"><a href="/policies-and-advices/index.html">Policies and Advices</a></li>
+          <li class="has-dropdown"><a href="forms/index.html">Forms</a></li>
+          <li class="has-dropdown"><a href="resources/index.html">Resources</a></li>
+          <li class="has-dropdown"><a href="publications/index.html">Publications</a></li>
+          <li class="has-dropdown"><a href="this-site/index.html">This Site</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+            <ul class="dropdown">
+              <li><a href="">Profile</a></li>
+              <li><a href="">Sign out</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="search__toggle--fullscreen"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+  </div> -->
+</header>
+
+<div class="search__container">
+  <div class="row">
+    <div class="large-6 large-centered columns">
+      <div class="row collapse">
+        <div class="small-9 columns">
+          <input id="search" type="text" placeholder="Search people, forms, documents ...">
+        </div>
+        <div class="small-1 columns">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="small-2 columns">
+          <select>
+            <option value="all" selected="selected">All</option>
+            <option value="form">Forms</option>
+            <option value="policy">Policy</option>
+            <option value="directory">People</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <p class="margin-top text-subtitle text-center text-small">Type in keywords and press <strong>Enter</strong> to search. Use the <strong>dropdown</strong> to search within a specific topic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="content">
+    <div class="row padding-bottom">
+  <div class="large-6 columns">
+    <h3>Spotlight</h3>
+    <div class="js-slider">
+      <div class="slide">
+        <img src="assets/images/parl-house-01.jpg" />
+        <div class="js-slider__text">
+          <h3><a href="our-department/index.html">Appointment of the Secretary, Department of Parliamentary Services</a></h3>
+          <p>Mr Robert Stefanic has been appointed to be the Secretary of DPS</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/parl-house-02.jpg" />
+        <div class="js-slider__text">
+          <h3><a href="our-department/index.html">New SAP Performance Management Module from Monday 2 November</a></h3>
+          <p>New SAP module to replace the current paper based Performance Plans</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/parl-house-04.jpg" />
+        <div class="js-slider__text">
+          <h3><a href="our-department/index.html">Latest @DPS Newsletter</a></h3>
+          <p>The latest DPS newsletter for November is out now</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/parl-house-09.jpg" />
+        <div class="js-slider__text">
+          <h3><a href="our-department/index.html">Some other news</a></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur numquam adipisci eligendi repellat! Maxime nulla tempora laudantium cumque, culpa quidem sint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="large-3 columns">
+    <ul class="simple-tabs">
+      <li class="simple-tabs__title active"><h3><a href="#tab-news">News</a></h3></li>
+      <li class="simple-tabs__title"><h3><a href="#tab-blog">DPS Blog</a></h3></li>
+    </ul>
+    <div class="simple-tabs__content">
+      <div id="tab-news" class="content active">
+        <ul class="no-bullet">
+          <li class="border-bottom">
+            <a href="news/single.html"><strong>Temporary Closure of Main Committee Room Foyer from Wednesday 18 November</strong></strong></a><br>
+            <div class="meta text-small">
+              <span class="meta__date">5 hours ago</span> in <a class="meta__category" href="">Outage</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href="news/single.html"><strong>Tricolore illumination of Parliament House to continue until Sunday 22 November 2015</strong></a><br>
+            <div class="meta text-small">
+              <span class="meta__date">1 day ago</span> in <a class="meta__category" href="">Operation</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href="news/single.html"><strong>Appointment of the Secretary, Department of Parliamentary Services</strong></a><br>
+            <div class="meta text-small">
+              <span class="meta__date">2 days ago</span> in <a class="meta__category" href="">News</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href="news/single.html"><strong>New SAP Performance Management Module from Monday 2 November</strong></a><br>
+            <div class="meta text-small">
+              <span class="meta__date">1 week ago</span> in <a class="meta__category" href="">News</a>
+            </div>
+          </li>
+        </ul>
+        <a class="button secondary small round" href="news/index.html">View all news</a>
+      </div>
+
+      <div id="tab-blog" class="content">
+        <ul class="no-bullet">
+            <li class="border-bottom">
+              <strong><a href="blog/single.html">Voluptas consequuntur atque sunt fuga aperiam assumenda ea quis autem</a></strong>
+              <div class="meta text-small">
+                <span class="meta__date">5 hours ago</span> in <a href="#">Social club</a>
+              </div>
+            </li>
+            <li class="margin-bottom">
+              <strong><a href="blog/single.html">Iusto asperiores velit officia quos voluptatibus enim ut amet quibusdam</a></strong>
+              <div class="meta text-small">
+                <span class="meta__date">5 hours ago</span> in <a href="#">Projects</a>
+              </div>
+            </li>
+            <li class="margin-bottom">
+              <strong><a href="blog/single.html">Nihil possimus sit accusamus ut delectus expedita debitis suscipit nisi</a></strong>
+              <div class="meta text-small">
+                <span class="meta__date">5 hours ago</span> in <a href="#">Projects</a>
+              </div>
+            </li>
+            <li class="margin-bottom">
+              <strong><a href="blog/single.html">Non eum quam odio tenetur voluptatum cum voluptate cum quam</a></strong>
+              <div class="meta text-small">
+                <span class="meta__date">5 hours ago</span> in <a href="#">Projects</a>
+              </div>
+            </li>
+        </ul>
+        <a class="button secondary small round" href="blog/index.html">View all blog</a>
+      </div>
+    </div>
+
+    <div class="border-top">
+      <a href="" class="button muted text-center full-width text-uppercase" style="margin-bottom:0;">
+        For all emergencies
+        <br>
+        <strong style="display:block; font-size:1.25rem; margin: 0.85rem 0;"><i class="fa fa-fw fa-angle-double-right"></i>Dial 7117<i class="fa fa-fw fa-angle-double-left"></i></strong>
+      </a>
+    </div>
+  </div>
+  <div class="large-3 columns">
+    <h3>Calendar</h3>
+    <div class="row collapse">
+      <div class="small-6 columns"><a href="" class="panel__toggle panel__toggle--active" data-panelid="panel-event">Day</a></div>
+      <div class="small-6 columns"><a href="" class="panel__toggle" data-panelid="panel-calendar">Month</a></div>
+    </div>
+    <div class="panel__content panel__content--active" id="panel-event">
+      <strong>Today</strong>
+      <article class="panel event event--small full-width margin-top">
+        <a href="" class="event__description-header">Senate Committee Hearing
+        </a>
+        <p class="event__description-detail"><span class="event__description-time">08:30AM, 6 hours, 30 minutes</span><br> ADELAIDE SA: Hindley 1 Room, Hotel Grand Chancellor, 65 Hindley Street</p>
+      </article>
+      <article class="panel event event--small full-width">
+        <a href="" class="event__description-header">Senate Committee Hearing</a>
+        <p class="event__description-detail"><span class="event__description-time">09:00AM, 6 hours</span><br> SYDNEY NSW: Macquarie Room, Macquarie Street</p>
+      </article>
+      <p></p>
+      <strong>Tomorrow</strong>
+      <article class="panel event event--small full-width margin-top">
+        <a href="" class="event__description-header">Senate Committee Hearing</a>
+        <p class="event__description-detail"><span class="event__description-time">All day</span><br> MACKAY QLD: Quest Mackay, Macalister Street</p>
+      </article>
+    </div>
+    <div class="panel__content" id="panel-calendar">
+      <div class="row">
+  <div class="columns">
+    <div class="calendar__month text-center">
+      <a href="" class="calendar__month__prev"><i class="fa fa-2x fa-angle-left"></i></a>
+      <h4>24 November 2015</h4>
+      <a href="" class="calendar__month__next"><i class="fa fa-2x fa-angle-right"></i></a>
+    </div>
+    <table class="calendar__table">
+      <thead>
+        <tr>
+          <th width="14%">Sun</th>
+          <th width="14%">Mon</th>
+          <th width="14%">Tue</th>
+          <th width="14%">Wed</th>
+          <th width="14%">Thu</th>
+          <th width="14%">Fri</th>
+          <th width="14%">Sat</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="inactive">
+            <div class="calendar__day calendar__day--inactive">
+              29
+            </div>
+          </td>
+          <td class="inactive">
+            <div class="calendar__day calendar__day--inactive">
+              30
+            </div>
+          </td>
+          <td class="inactive">
+            <div class="calendar__day calendar__day--inactive">
+              31
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              1
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              2
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              3
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              4
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="calendar__day">
+              5
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              6
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              7
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              8
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              9
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              10
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              11
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="calendar__day">
+              12
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              13
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--green"></span>
+                <span class="calendar__indicator calendar__indicator--secondary"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              14
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--red"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              15
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--red"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              16
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--red"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              17
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--red"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              18
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="calendar__day">
+              19
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              20
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--green"></span>
+              </div>
+            </div>
+          </td>
+          <td data-reveal-id="calendar__modal">
+            <div class="calendar__day">
+              21
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--green"></span>
+              </div>
+            </div>
+          </td>
+          <td data-reveal-id="calendar__modal">
+            <div class="calendar__day">
+              22
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--secondary"></span>
+                <span class="calendar__indicator calendar__indicator--green"></span>
+              </div>
+            </div>
+          </td>
+          <td data-reveal-id="calendar__modal">
+            <div class="calendar__day">
+              23
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--green"></span>
+              </div>
+            </div>
+          </td>
+          <td data-reveal-id="calendar__modal">
+            <div class="calendar__day calendar__day--today">
+              24
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              25
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="calendar__day">
+              26
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              27
+              <div class="calendar__indicators">
+                <span class="calendar__indicator calendar__indicator--green"></span>
+                <span class="calendar__indicator calendar__indicator--orange"></span>
+                <span class="calendar__indicator calendar__indicator--primary"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              28
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              29
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day">
+              30
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day calendar__day--inactive">
+              1
+            </div>
+          </td>
+          <td>
+            <div class="calendar__day calendar__day--inactive">
+              2
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="inline-list text-small">
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--green"></span> Reps sitting</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--red"></span> Senate sitting</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--orange"></span> Committee</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--primary"></span> Training</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--secondary"></span> Social events</li>
+    </ul>
+
+    <!-- <div class="event__container event__container--scroll">
+      <article class="event event--small">
+        <a href="" class="event__description-header">Senate Committee Hearing</a>
+        <p class="event__description-detail"><span class="event__description-time">08:30AM, 6 hours, 30 minutes</span><br> ADELAIDE SA: Hindley 1 Room, Hotel Grand Chancellor, 65 Hindley Street</p>
+      </article>
+      <article class="event event--small border-top">
+        <a href="" class="event__description-header">Senate Committee Hearing</a>
+        <p class="event__description-detail"><span class="event__description-time">09:00AM, 6 hours</span><br> SYDNEY NSW: Macquarie Room, Parliament of New South Wales, Macquarie Street</p>
+      </article>
+      <article class="event event--small border-top">
+        <a href="" class="event__description-header">Senate Committee Hearing</a>
+        <p class="event__description-detail"><span class="event__description-time">All day</span><br> MACKAY QLD: Quest Mackay, 38 Macalister Street</p>
+      </article>
+    </div> -->
+  </div>
+</div>
+
+<div id="calendar__modal" class="calendar__modal reveal-modal small" data-reveal aria-labelledby="calendar__modal" aria-hidden="true" role="dialog">
+  <div class="flex flex--center">
+    <div class="flex__col text-left">
+      <a href="#"><i class="fa fa-fw fa-angle-left"></i> Thu 23 Nov 2015</a>
+    </div>
+    <div class="flex__col--2">
+      <h2 id="modalTitle" class="text-center">Friday, 24 November 2015</h2>
+    </div>
+    <div class="flex__col text-right">
+      <a href="#">Sat 25 Nov 2015 <i class="fa fa-fw fa-angle-right"></i></a>
+    </div>
+  </div>
+  <div class="border-bottom"></div>
+  <div class="event event--small border-bottom full-width">
+    <span class="calendar__indicator calendar__indicator--large calendar__indicator--green"></span>
+    <div class="event__description">
+      <a href="" class="event__description-header">House of Reps sitting</a>
+      <p class="event__description-detail"><span class="event__description-time">08:30AM, 6 hours, 30 minutes</span><br> ADELAIDE SA: Hindley 1 Room, Hotel Grand Chancellor, 65 Hindley Street</p>
+    </div>
+  </div>
+  <div class="event event--small border-bottom full-width">
+    <span class="calendar__indicator calendar__indicator--large calendar__indicator--orange"></span>
+    <div class="event__description">
+      <a href="" class="event__description-header">Senate Committee Hearing</a>
+      <p class="event__description-detail"><span class="event__description-time">09:00AM, 6 hours</span><br> SYDNEY NSW: Macquarie Room, Parliament of New South Wales, Macquarie Street</p>
+    </div>
+  </div>
+  <div class="event event--small">
+    <span class="calendar__indicator calendar__indicator--large calendar__indicator--secondary"></span>
+    <div class="event__description">
+      <a href="" class="event__description-header">BBQ End of Year party</a>
+      <p class="event__description-detail"><span class="event__description-time">All day</span><br> MACKAY QLD: Quest Mackay, 38 Macalister Street</p>
+    </div>
+  </div>
+  <div class="border-top">
+    <strong>Legends</strong>
+    <ul class="inline-list text-small" style="margin-bottom: 0;">
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--green"></span> Reps sitting</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--red"></span> Senate sitting</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--orange"></span> Committee</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--primary"></span> Training</li>
+      <li><span class="calendar__indicator calendar__indicator--large calendar__indicator--secondary"></span> Social events</li>
+    </ul>
+  </div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="bg--primary--light quicklink__container">
+  <div class="row">
+    <div class="columns border-bottom padding-top padding-bottom" style="margin-bottom:0;">
+      <div class="js-quicklink-slider">
+        <div class="slide">
+          <a class="quicklink">
+            <img src="assets/images/logo-sap.svg" />
+            SAP Self Service
+          </a>
+        </div>
+        <div class="slide">
+          <a class="quicklink">
+            <img src="assets/images/logo-kronos.svg" />
+            DPS Kronos
+          </a>
+        </div>
+        <div class="slide">
+          <a class="quicklink">
+            <img src="assets/images/logo-hp.svg" />
+            Service Desk ESS
+          </a>
+        </div>
+        <div class="slide">
+          <a class="quicklink">
+            <img src="assets/images/logo-hp.svg" />
+            DPS ESS
+          </a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-clock-o"></i> ICT Project <br> Management</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-book"></i> DPS Enterprise <br> Agreement 2011</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-user"></i> Current Vacancies</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-life-ring"></i> 2020 Online</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-calendar"></i> DPS Training<br> Calendar</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-book"></i> Reconciliation<br>Action Plan</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-exclamation-triangle"></i> Material Safety<br>Data Sheets</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><img src="assets/images/logo-hprm-bw.png" /> TRIM Help</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-shopping-bag"></i> Classiified</a>
+        </div>
+        <div class="slide">
+          <a class="quicklink"><i class="fa fa-4x fa-cutlery"></i> Parliament House<br> Catering by IHG</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg--primary--light">
+  <div class="row">
+    <div class="large-3 columns">
+      <h3>Occupants Directory</h3>
+      <br>
+      <form action="">
+        <div class="row collapse">
+          <div class="small-10 columns">
+            <input type="text" placeholder="Enter name ...">
+          </div>
+          <div class="small-2 columns">
+            <a href="#" class="button postfix"><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+      </form>
+      <ul>
+        <li><a href="">Organisation chart</a></li>
+        <li><a href="">Key contacts</a></li>
+      </ul>
+      <h3>Surveys</h3>
+      <ul><li><a href="/surveys/aps-dps-employee-census-results">APS DPS Employee Census results</a></li><li><a href="/surveys/dps-2012-survey">DPS 2012 Survey</a></li><li><a href="/surveys/dps-suggestion-box">DPS Suggestion Box</a></li><li><a href="/surveys/polls-and-surveys">Polls and Surveys</a></li>
+      </ul>
+    </div>
+    <div class="large-3 columns border-left">
+      <h3>Classifieds</h3>
+      <ul>
+        <li class="margin-bottom">
+          <div class="right margin-left">
+            <strong class="text-large">$1800.00</strong>
+          </div>
+          <a href="classifieds/single.html">iMac (Retina 5K, 27-inch, Mid 2015) 3.3Ghz Intel Core i5, 8GB RAM</a>
+          <div class="meta text-small">
+            Posted <span class="meta__date">5 days ago</span>
+          </div>
+        </li>
+        <li class="margin-bottom">
+          <div class="right margin-left">
+            <strong class="text-large">Swap/Trade</strong>
+          </div>
+          <a href="classifieds/single.html">LG 29UM57 Gaming Ultrawide monitor</a>
+          <div class="meta text-small">
+            Posted <span class="meta__date">2 days ago</span>
+          </div>
+        </li>
+        <li class="margin-bottom">
+          <div class="right margin-left">
+            <strong class="text-large">Free</strong>
+          </div>
+          <a href="classifieds/single.html">Printer -Fuji Xerox inkjet printer</a>
+          <div class="meta text-small">
+            Posted <span class="meta__date">3 days ago</span>
+          </div>
+        </li>
+        <li class="margin-bottom">
+          <div class="right margin-left">
+            <strong class="text-large">Negotiable</strong>
+          </div>
+          <a href="classifieds/single.html">New Apple MacBook Pro (late 2015) 13-inch Retina</a>
+          <div class="meta text-small">
+            Posted <span class="meta__date">2 days ago</span>
+          </div>
+        </li>
+      </ul>
+      <p><a href="classifieds/index.html" class="button small round">View all classifieds</a></p>
+    </div>
+    <div class="large-6 columns border-left">
+      <h3>My Favourites</h3>
+      <ul class="text-multi-columns-2">
+          <li class="margin-bottom">
+            <a href=""><strong>Ea cum ducimus quia est iure eligendi voluptas blanditiis nesciunt</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">2 days ago</span> in <a href="#">Social club</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href=""><strong>Id autem temporibus ut assumenda adipisci nobis aut et qui</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">5 days ago</span> in <a href="#">Newsletter</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href=""><strong>Quasi possimus sit deleniti repudiandae id expedita modi magni sit</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">2 days ago</span> in <a href="#">Building and maintenance</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href=""><strong>Et blanditiis pariatur reiciendis deserunt suscipit distinctio minima fugiat doloribus</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">5 days ago</span> in <a href="#">Building and maintenance</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href=""><strong>Est sed et assumenda eveniet in assumenda deserunt quos voluptas</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">3 days ago</span> in <a href="#">News</a>
+            </div>
+          </li>
+          <li class="margin-bottom">
+            <a href=""><strong>Ut autem aut soluta voluptate modi optio rerum quae eum</strong></a>
+            <div class="meta text-small">
+              Added <span class="meta__date">2 days ago</span> in <a href="#">Projects</a>
+            </div>
+          </li>
+      </ul>
+      <p><a href="profile/index.html" class="button small round">View all favourites</a></p>
+    </div>
+  </div>
+</div>
+
+  </div>
+   <!-- .prefooter -->
+<div class="prefooter margin-leader padding-medium">
+  <div class="row">
+    <div class="small-6 large-2 columns">
+      <h3>Our Department</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">DPS Executive</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Chief Information Officer</a></li>
+        <li><a href="#">Chief Executive Officer</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Message from the Secretary</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Our Services</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Human Resources</a></li>
+        <li><a href="#">Finance</a></li>
+        <li><a href="#">Procurement</a></li>
+        <li><a href="#">Record Management</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Library Services</a></li>
+        <li><a href="#">Communications</a></li>
+        <li><a href="#">Building Services</a></li>
+        <li><a href="#">2020 Helpdesk</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Policies and Advices</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All policies and advices</a></li>
+        <li><a href="#">Governance Papers</a></li>
+        <li><a href="#">Financial Papers</a></li>
+        <li><a href="#">Human Resources Papers</a></li>
+      </ul>
+
+      <h3>Publications</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Circulars</a></li>
+        <li><a href="#">DPS Winter Photography Competition</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Forms</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All forms</a></li>
+        <li><a href="#">Finance forms</a></li>
+        <li><a href="#">Procurement forms</a></li>
+        <li><a href="#">Human Resources forms</a></li>
+        <li><a href="#">Computer Account forms</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Resources</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Architects Design Intent</a></li>
+        <li><a href="#">Building Maps</a></li>
+        <li><a href="#">DPS Style Guide</a></li>
+        <li><a href="#">DPS Document Templates</a></li>
+        <li><a href="#">Office Furniture Style Guide</a></li>
+        <li><a href="#">Parliamentary Sitting</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>This site</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">About this site</a></li>
+        <li><a href="#">Report a content issue</a></li>
+        <li><a href="#">The site governance</a></li>
+        <li><a href="#">Content publishers</a></li>
+        <li><a href="#">Give us your feedback</a></li>
+        <li><a href="#">The Communications team</a></li>
+        <li><a href="#">The Web Applications team</a></li>
+      </ul>
+
+      <h3>Connect with us</h3>
+      <ul class="inline-list">
+        <li><a href=""><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="padding-medium">
+  <div class="row">
+    <div class="medium-10 columns">
+      <ul class="inline-list text-small">
+            <li><a href="accessibility-information.html">Accessibility information</a></li>
+            <li><a href="copyright-information.html">Copyright information</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="help.html">Help</a></li>
+        <li><a href="/__middleman/sitemap/">Sitemap</a></li>
+        <li><a href="">A-Z Index</a></li>
+      </ul>
+    </div>
+
+    <div class="medium-2 columns text-small text-right">
+      <a href="#" id="back-to-top">Back to top <i class="fa fa-fw fa-angle-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/javascripts/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/fastclick.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/holder.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/slick.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/countUp.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/foundation.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/jquery.scrollNav.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/vendor/jquery.jqcloud.min.js" type="text/javascript"></script>
+<script src="assets/javascripts/main.js" type="text/javascript"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//p59741/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//p59741/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

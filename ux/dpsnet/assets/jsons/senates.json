@@ -1,0 +1,35 @@
+{
+ "name": "",
+ "colour": "white",
+ "children": [
+    {
+     "name": "Coalition",
+     "colour": "#04075a",
+     "children": [
+        { "name": "Liberal", "size": 23, "colour": "#080CAB" },
+        { "name": "Liberal National Party of Queensland", "size": 6, "colour": "#1456F1" },
+        { "name": "National", "size": 3, "colour": "#00800F" },
+        { "name": "CLP", "size": 1, "colour": "#000080" }
+      ]
+    },
+    {
+      "name": "Opposition",
+      "colour": "#ce000f",
+      "children": [
+        { "name": "Labor", "size": 25, "colour": "#F00011" }
+      ]
+    },
+    {
+     "name": "Crossbench",
+     "colour": "#a2a2a2",
+     "children": [
+        { "name": "Greens", "size": 10, "colour": "#10C25B" },
+        { "name": "Palmer United Party", "size": 3, "colour": "#FFEC00" },
+        { "name": "Motoring", "size": 1, "colour": "#002CE7" },
+        { "name": "LDP", "size": 1, "colour": "#FFC323" },
+        { "name": "Family First", "size": 1, "colour": "#00EAFF" },
+        { "name": "Independent", "size": 2, "colour": "#B3B3B3" }
+      ]
+    }
+  ]
+}

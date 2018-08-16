@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>Research | Australian Parliament House </title>
+  <meta name="description" content="[#<Proc:0x00000007f8a9d8@C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/padrino-helpers-0.12.5/lib/padrino-helpers/output_helpers.rb:146>]">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,800,400|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+  <link href="../../assets/stylesheets/main.css" rel="stylesheet" type="text/css" />
+  <script src="../../assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
+  <script src="../../assets/javascripts/vendor/d3.min.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+  <header>
+  <div class="row">
+    <div class="columns">
+      <ul class="skip-links">
+        <li><a href="#main-nav">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="large-3 columns">
+      <div class="padding-right">
+        <h1>
+<a href="../../index.html">            <img src="../../assets/images/dps-logo-inline.svg" />
+</a>        </h1>
+      </div>
+    </div>
+
+    <div class="large-9 columns">
+      <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span>Menu</span></a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <ul id="main-nav">
+            <li class="home"><a href="../../index.html">Home</a></li>
+            <li class="has-dropdown active"><a href="../index.html">Our Department</a></li>
+            <li class="has-dropdown"><a href="../../our-services/index.html">Our Services</a></li>
+            <li class="has-dropdown"><a href="../../policies-and-guidelines/index.html">Policies and Guidelines</a></li>
+            <li class="has-dropdown"><a href="../../forms/index.html">Forms</a></li>
+            <li class="has-dropdown"><a href="../../resources/index.html">Resources</a></li>
+            <li class="has-dropdown"><a href="../../publications/index.html">Publications</a></li>
+            <li class="has-dropdown"><a href="../../this-site/index.html">This Site</a></li>
+            <!-- <li class="has-dropdown">
+              <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul class="dropdown">
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li> -->
+            <li><a href="" class="search__toggle"><i class="fa fa-search"></i></a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- <div class="large-6 columns">
+      <div class="nav-top-links-container">
+        <nav class="nav-top-links">
+          <ul class="inline-block-list text-small">
+            <li class="has-form">
+              <select>
+                <option value="all" selected="selected">All</option>
+                <option value="form">Forms</option>
+                <option value="policy">Policy</option>
+                <option value="directory">People</option>
+              </select>
+              <input type="text" placeholder="Search people, forms, documents ...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </li>
+            <li class="has-dropdown">
+              <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-fw fa-user"></i> John Smith</a>
+              <ul id="drop1" class="f-dropdown" data-dropdown-content>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- <div class="contain-to-grid">
+    <nav id="main-nav" class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon">
+          <a href="#"><span>Menu</span></a>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul id="main-nav" class="right">
+          <li class="home"><a href="../../index.html">Home</a></li>
+          <li class="has-dropdown active"><a href="../index.html">Our Department</a></li>
+          <li class="has-dropdown"><a href="../../our-services/index.html">Our Services</a></li>
+          <li class="has-dropdown"><a href="/policies-and-advices/index.html">Policies and Advices</a></li>
+          <li class="has-dropdown"><a href="../../forms/index.html">Forms</a></li>
+          <li class="has-dropdown"><a href="../../resources/index.html">Resources</a></li>
+          <li class="has-dropdown"><a href="../../publications/index.html">Publications</a></li>
+          <li class="has-dropdown"><a href="../../this-site/index.html">This Site</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a style="text-transform:none;letter-spacing:0;"><i class="fa fa-fw fa-user"></i> John Smith</a>
+            <ul class="dropdown">
+              <li><a href="">Profile</a></li>
+              <li><a href="">Sign out</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="search__toggle--fullscreen"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+  </div> -->
+</header>
+
+<div class="search__container">
+  <div class="row">
+    <div class="large-6 large-centered columns">
+      <div class="row collapse">
+        <div class="small-9 columns">
+          <input id="search" type="text" placeholder="Search people, forms, documents ...">
+        </div>
+        <div class="small-1 columns">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="small-2 columns">
+          <select>
+            <option value="all" selected="selected">All</option>
+            <option value="form">Forms</option>
+            <option value="policy">Policy</option>
+            <option value="directory">People</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns">
+          <p class="margin-top text-subtitle text-center text-small">Type in keywords and press <strong>Enter</strong> to search. Use the <strong>dropdown</strong> to search within a specific topic</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row padding-medium" id="content">
+    <div class="large-10 large-centered columns">
+      <div class="text-right right">
+  <ul class="button-group round">
+    <li><a href="#" class="add-to-favourites button tiny muted"><i class="fa fa-fw fa-star-o"></i></a></li>
+    <li>
+      <a href="" data-reveal-id="modal-share" class="button tiny muted"><i class="fa fa-fw fa-share-alt"></i></a>
+      <div id="modal-share" class="reveal-modal tiny" data-reveal>
+        <h2>Share</h2>
+        <!-- <button class="facebook button"><i class="fa fa-fw fa-lg fa-facebook"></i> Share on Facebook</button><br/>
+        <button class="twitter button"><i class="fa fa-fw fa-lg fa-twitter"></i> Share on Twitter</button><br/> -->
+        <button data-reveal-id="modal-email" class="mail button"><i class="fa fa-fw fa-lg fa-envelope-o"></i> Email</button>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id="modal-email" class="reveal-modal tiny" data-reveal>
+        <h2>Email</h2>
+        <form action="">
+          <input type="text" placeholder="Email addresses">
+          <p><strong>Subject:</strong> Research</p>
+          <textarea name="" placeholder="Your message" rows="10" cols="60" placeholder="Your message">Your message &#10;&#10;&#10;Link&#10;/our-department/library/research.html</textarea>
+          <button type="submit" class="button small">Send</button>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </li>
+    <!-- <li><a href="#" class="button tiny"><i class="fa fa-fw fa-print"></i></a></li> -->
+  </ul>
+</div>
+
+      <div class="breadcrumbs-container">
+  <nav class="breadcrumbs"><a href="../../index.html">Home</a> <a href="../index.html">Our Department</a> <a href="../library.html">Default</a> <span class="current">Research</span></nav>
+</div>
+
+      <article>
+        <h1>  Research
+</h1>
+        
+<div class="row">
+  <div class="large-3 large-push-9 columns">
+    <div class="scroll-nav__container"></div>
+  </div>
+
+  <div class="large-9 large-pull-3 columns">
+    <div class="scroll-nav__content">
+      <p class="lead">Summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam reiciendis distinctio inventore non ipsa alias, quasi aut beatae esse. Nisi culpa tempora necessitatibus magni autem officiis mollitia ullam iusto.</p>
+      <div class="row">
+        <div class="medium-6 medium-centered columns">
+          <p class="text-center"><img src="../../assets/images/placeimg_1000_600_tech_09.jpg" /></p>
+        </div>
+      </div>
+
+      <h2>Text, paragraph and definition list</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nemo umquam voluptatem appellavit, appellat; Quamquam id quidem, infinitum est in hac urbe; Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Duo Reges: constructio interrete. Non igitur bene. Quibusnam praeteritis? Sic enim censent, oportunitatis esse beate vivere. </p>
+
+      <blockquote cite='http://loripsum.net'>
+      	Alterum autem genus est magnarum verarumque virtutum, quas appellamus voluntarias, ut prudentiam, temperantiam, fortitudinem, iustitiam et reliquas eiusdem generis.
+      </blockquote>
+
+      <dl>
+      	<dt><dfn>Ita credo.</dfn></dt>
+      	<dd>Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis.</dd>
+      	<dt><dfn>Haeret in salebra.</dfn></dt>
+      	<dd>Sic, et quidem diligentius saepiusque ista loquemur inter nos agemusque communiter.</dd>
+      	<dt><dfn>Facete M.</dfn></dt>
+      	<dd>Illis videtur, qui illud non dubitant bonum dicere -;</dd>
+      	<dt><dfn>Ita prorsus, inquam;</dfn></dt>
+      	<dd>At Zeno eum non beatum modo, sed etiam divitem dicere ausus est.</dd>
+      </dl>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nemo umquam voluptatem appellavit, appellat; Quamquam id quidem, infinitum est in hac urbe; Cupit enim dícere nihil posse ad beatam vitam deesse sapienti. Duo Reges: constructio interrete. Non igitur bene. Quibusnam praeteritis? Sic enim censent, oportunitatis esse beate vivere.</p>
+
+      <h2>Ordered list</h2>
+
+      <p>Velut ego nunc moveor. Nam illud vehementer repugnat, eundem beatum esse et multis malis oppressum. <a href='http://loripsum.net/' target='_blank'>Sint ista Graecorum;</a> Dolere malum est: in crucem qui agitur, beatus esse non potest. Hoc loco tenere se Triarius non potuit. Negat enim summo bono afferre incrementum diem. Sed tempus est, si videtur, et recta quidem ad me. </p>
+
+      <p>Quis istud possit, inquit, negare? Est enim effectrix multarum et magnarum voluptatum. <a href='http://loripsum.net/' target='_blank'>Quo modo autem philosophus loquitur?</a> Nec enim, dum metuit, iustus est, et certe, si metuere destiterit, non erit; </p>
+
+      <ol>
+      	<li>Si quicquam extra virtutem habeatur in bonis.</li>
+      	<li>Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat?</li>
+      	<li>Quod ea non occurrentia fingunt, vincunt Aristonem;</li>
+      	<li>Minime vero probatur huic disciplinae, de qua loquor, aut iustitiam aut amicitiam propter utilitates adscisci aut probari.</li>
+      </ol>
+
+
+      <h2>Pre and unordered list</h2>
+
+      <p><b>Occultum facinus esse potuerit, gaudebit;</b> <a href='http://loripsum.net/' target='_blank'>Quo tandem modo?</a></p>
+
+      <pre>
+      Nam voluptatis causa facere omnia, cum, etiamsi nihil
+      consequamur, tamen ipsum illud consilium ita faciendi per se
+      expetendum et honestum et solum bonum sit, nemo dixit.
+
+      Nec vero umquam summum bonum assequi quisquam posset, si
+      omnia illa, quae sunt extra, quamquam expetenda, summo bono
+      continerentur.
+      </pre>
+
+      <p>Contemnit enim disserendi elegantiam, confuse loquitur. Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus intercludat necesse est. Traditur, inquit, ab Epicuro ratio neglegendi doloris. An haec ab eo non dicuntur? Consequentia exquirere, quoad sit id, quod volumus, effectum. <a href='http://loripsum.net/' target='_blank'>At certe gravius.</a> </p>
+
+      <ul>
+      	<li>Quicquid porro animo cernimus, id omne oritur a sensibus;</li>
+      	<li>Iam in altera philosophiae parte.</li>
+      	<li>Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit.</li>
+      	<li>Sin autem eos non probabat, quid attinuit cum iis, quibuscum re concinebat, verbis discrepare?</li>
+      </ul>
+
+
+      <h2>Headings. Heading 2</h2>
+      <p>Etiam feugiat lorem non metus.</p>
+      <h3>Heading 3: Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur</h3>
+      <p>Fusce egestas elit eget lorem. Nam at tortor in tellus interdum sagittis. Fusce egestas elit eget lorem. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Ut a nisl id ante tempus hendrerit.</p>
+
+      <h4>Heading 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iure.</h4>
+      <p>Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Phasellus a est. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Integer tincidunt.</p>
+
+      <h5>Heading 5: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, esse.</h5>
+      <p>Pellentesque dapibus hendrerit tortor. Nullam dictum felis eu pede mollis pretium. Morbi mattis ullamcorper velit. In ut quam vitae odio lacinia tincidunt. Vestibulum fringilla pede sit amet augue.</p>
+
+      <h2>Image gallery</h2>
+      <ul class="clearing-thumbs" data-clearing>
+        <li></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_01.jpg"><img src="../../assets/images/placeimg_150_90_tech_01.jpg" /></a></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_02.jpg"><img src="../../assets/images/placeimg_150_90_tech_02.jpg" /></a></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_03.jpg"><img src="../../assets/images/placeimg_150_90_tech_03.jpg" /></a></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_04.jpg"><img src="../../assets/images/placeimg_150_90_tech_04.jpg" /></a></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_05.jpg"><img src="../../assets/images/placeimg_150_90_tech_05.jpg" /></a></li>
+        <li><a href="../../assets/images/placeimg_1000_600_tech_06.jpg"><img src="../../assets/images/placeimg_150_90_tech_06.jpg" /></a></li>
+      </ul>
+      <p>Click on images to view in full size</p>
+    </div>
+  </div>
+</div>
+
+      </article>
+      
+      <div class="row">
+  <div class="columns">
+    <div class="border-top">
+      <p class="text-small text-subtitle">Last modified: 8 Aug 2015, 15:30<br/>
+      Communications section, DPS</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+   <!-- .prefooter -->
+<div class="prefooter margin-leader padding-medium">
+  <div class="row">
+    <div class="small-6 large-2 columns">
+      <h3>Our Department</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">DPS Executive</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Chief Information Officer</a></li>
+        <li><a href="#">Chief Executive Officer</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Message from the Secretary</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Our Services</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Human Resources</a></li>
+        <li><a href="#">Finance</a></li>
+        <li><a href="#">Procurement</a></li>
+        <li><a href="#">Record Management</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Library Services</a></li>
+        <li><a href="#">Communications</a></li>
+        <li><a href="#">Building Services</a></li>
+        <li><a href="#">2020 Helpdesk</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Policies and Advices</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All policies and advices</a></li>
+        <li><a href="#">Governance Papers</a></li>
+        <li><a href="#">Financial Papers</a></li>
+        <li><a href="#">Human Resources Papers</a></li>
+      </ul>
+
+      <h3>Publications</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Staff bulletins</a></li>
+        <li><a href="#">Circulars</a></li>
+        <li><a href="#">DPS Winter Photography Competition</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Forms</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">All forms</a></li>
+        <li><a href="#">Finance forms</a></li>
+        <li><a href="#">Procurement forms</a></li>
+        <li><a href="#">Human Resources forms</a></li>
+        <li><a href="#">Computer Account forms</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>Resources</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">Architects Design Intent</a></li>
+        <li><a href="#">Building Maps</a></li>
+        <li><a href="#">DPS Style Guide</a></li>
+        <li><a href="#">DPS Document Templates</a></li>
+        <li><a href="#">Office Furniture Style Guide</a></li>
+        <li><a href="#">Parliamentary Sitting</a></li>
+      </ul>
+    </div>
+
+    <div class="small-6 large-2 columns">
+      <h3>This site</h3>
+      <ul class="no-bullet text-small">
+        <li><a href="#">About this site</a></li>
+        <li><a href="#">Report a content issue</a></li>
+        <li><a href="#">The site governance</a></li>
+        <li><a href="#">Content publishers</a></li>
+        <li><a href="#">Give us your feedback</a></li>
+        <li><a href="#">The Communications team</a></li>
+        <li><a href="#">The Web Applications team</a></li>
+      </ul>
+
+      <h3>Connect with us</h3>
+      <ul class="inline-list">
+        <li><a href=""><i class="fa fa-fw fa-2x fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-fw fa-2x fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="padding-medium">
+  <div class="row">
+    <div class="medium-10 columns">
+      <ul class="inline-list text-small">
+            <li><a href="../../accessibility-information.html">Accessibility information</a></li>
+            <li><a href="../../copyright-information.html">Copyright information</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+            <li><a href="../../feedback.html">Feedback</a></li>
+            <li><a href="../../help.html">Help</a></li>
+        <li><a href="/__middleman/sitemap/">Sitemap</a></li>
+        <li><a href="">A-Z Index</a></li>
+      </ul>
+    </div>
+
+    <div class="medium-2 columns text-small text-right">
+      <a href="#" id="back-to-top">Back to top <i class="fa fa-fw fa-angle-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/javascripts/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/fastclick.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/holder.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/slick.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/countUp.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/foundation.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/jquery.scrollNav.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/vendor/jquery.jqcloud.min.js" type="text/javascript"></script>
+<script src="../../assets/javascripts/main.js" type="text/javascript"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//p59741/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//p59741/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

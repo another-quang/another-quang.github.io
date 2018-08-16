@@ -1,0 +1,195 @@
+categories:
+  -
+    name: Parliamentary Budget Office
+    theme: pbo
+    links:
+      -
+        title: PBO home
+        url: http://www.pbo.gov.au/
+        description: Lorem ipsum dolor sit amet
+        tags: [pbo, website]
+      -
+        title: PBO Intranet
+        description: PBO Intranet
+        url: http://pbo.parl.net/
+        tags: [pbo, website]
+      -
+        title: Guidance to Senators and Members
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Budget_Office/guidance
+        description: Guidance to Senators and Members
+        tags: [pbo, guide]
+      -
+        title: Costing request templates
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Budget_Office/templates
+        description: Costing request templates
+        tags: [pbo, template]
+      -
+        title: Publicly released PBO responses: excluding caretaker costings
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Budget_Office/Publicly_released_PBO_responses_-_excluding_caretaker_costings
+        description: Publicly released PBO responses: excluding caretaker costings
+        tags: [pbo, report]
+      -
+        title: Research reports
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Budget_Office/research_reports
+        description: PBO Research reports
+        tags: [pbo, report]
+  -
+    name: Department of Parliamentary Services
+    theme: dps
+    links:
+      -
+        title: About the Department of Parliamentary Services
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Department_of_Parliamentary_Services
+        description: About the Department of Parliamentary Services
+        tags: [dps, website]
+      -
+        title: DPS Services Catalogue
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/~/media/05%20About%20Parliament/54%20Parliamentary%20Depts/543%20DPS/DPS_Services_catalogue.ashx
+        description: DPS Services Catalogue
+        tags: [dps, documentation]
+      -
+        title: ICT Strategic Plan 2013 - 2018
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Department_of_Parliamentary_Services/Publications/ICT_Strategic_Plan_2013_-_2018
+        description: ICT Strategic Plan 2013 - 2018
+        tags: [dps, documentation]
+      -
+        title: Information and Security Circulars
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Department_of_Parliamentary_Services/DPS_circulars
+        description: Information and Security Circulars
+        tags: [dps, documentation]
+      -
+        title: Parliamentary Friendship Groups
+        description: Parliamentary Friendship Groups
+        url: http://www.aph.gov.au/About_Parliament/Parliamentary_Friendship
+        tags: [dps, website]
+  -
+    name: Parliament Library
+    theme: dps
+    links:
+      -
+        title: Email the Library
+        description: Email the Library
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=mailto:libraryenquiries@aph.gov.au
+        tags: [library, website]
+      -
+        title: Library Client Services Portal - for all library services
+        description: Library Client Services Portal - for all library services
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://library/
+        tags: [library, website]
+      -
+        title: What's new from the Parliamentary Library
+        description: What's new from the Parliamentary Library
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://library/news
+        tags: [library, website]
+      -
+        title: Your Electorate
+        description: Your Electorate
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://library/Library/Your_electorate
+        tags: [library, app]
+      -
+        title: Bills Digests
+        description: Bills Digests
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd1213a
+        tags: [library, app]
+      -
+        title: Search the Library's Collections
+        description: Search the Library's Collections
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://libils.parl.net/uhtbin/cgisirsi.exe/0/0/0/49
+        tags: [library, website]
+      -
+        title: 	Parliamentary Library Website
+        description: 	Parliamentary Library Website
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library
+        tags: [library, website]
+      -
+        title: Library orientations and training
+        description: Library orientations and training
+        url: http://testsmsp/RecordLinkClick.aspx?Type=Kx&CBID=5&URL=http://library/training
+        tags: [library, training]
+  -
+    name: Senate
+    theme: senate
+    links:
+      -
+        title: Senate Intranet
+        description: Senate Intranet
+        url: http://sennet.parl.net/
+        tags: [senate, website]
+      -
+        title: Key contacts
+        description: Key contacts
+        url: http://sennet.parl.net/~/media/Senators/Services/who-to-contact-for-what.pdf
+        tags: [senate, pdf]
+      -
+        title: Stationary and Gifts
+        description: Stationary and Gifts
+        url: https://sengen/senate/register.cfm
+        tags: [senate, policy]
+      -
+        title: Training calendar
+        description: Training calendar
+        url: http://sennet.parl.net/~/media/Senate/Intranet/Our_Department/Training/2016.pdf
+        tags: [senate, training]
+      -
+        title: Travel bookings
+        description: Travel bookings
+        url: http://sennet.parl.net/policies-and-advices/finance/travel-bookings
+        tags: [senate, policy]
+  -
+    name: House of Reps
+    theme: reps
+    links:
+      -
+        title: House of Reps Intranet
+        description: House of Reps Intranet
+        url: http://repsnet.parl.net/
+        tags: [reps, website]
+      -
+        title: Training calendar
+        description: Training calendar
+        url: http://repsnet.parl.net/our-department/training
+        tags: [reps, training]
+      -
+        title: Key contacts
+        description: Key contacts
+        url: http://repsnet.parl.net/
+        tags: [reps, pdf]
+      -
+        title: In-House newsletters
+        description: In-House newsletters
+        url: http://repsnet.parl.net/our-department/in-house
+        tags: [reps, news]
+      -
+        title: Building Maps
+        description: Building Maps
+        url: http://repsnet.parl.net/our-building
+        tags: [reps, map]
+  -
+    name: Hansard
+    theme: default
+    links:
+      -
+        title: Last Hansard
+        description: Last Hansard
+        url: http://www.aph.gov.au/Parliamentary_Business/Hansard
+        tags: [hansard, documentation]
+      -
+        title: House hansard
+        description: House hansard
+        url: http://www.aph.gov.au/Parliamentary_Business/Hansard/Hansreps_2011
+        tags: [hansard, documentation]
+      -
+        title: Hansard Data Streaming
+        description: Hansard Data Streaming
+        url: http://hps.parl.net/pages/data/SMSP.aspx?t=g
+        tags: [hansard, website]
+      -
+        title: Hansard transcription servers
+        description: hansard transcription servers
+        url: http://www.aph.gov.au/~/media/32E5CFA7478942FEABD2A873D6A254C3.ashx
+        tags: [hansard, app]
+      -
+        title: Hansard style guide
+        description: hansard style guide
+        url: http://dpsstaffportal.parl.net/our-organisation/~/media/OurOrganisation/CMB/Hansard/Hansard%20Style%20Guide.ashx
+        tags: [hansard, guide]

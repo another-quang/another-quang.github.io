@@ -1,0 +1,934 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../assets/images/favicon.ico" rel="icon" type="image/ico" />
+
+  <title>House Live | ParlWork</title>
+
+  <script src="../assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
+  <script src="../assets/javascripts/vendor/fastclick.js" type="text/javascript"></script>
+
+  <link href="../assets/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="../assets/stylesheets/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" /><link href="../assets/stylesheets/foundation.css" rel="stylesheet" type="text/css" /><link href="../assets/stylesheets/foundation-datepicker/foundation-datepicker.css" rel="stylesheet" type="text/css" /><link href="../assets/stylesheets/animate/animate.min.css" rel="stylesheet" type="text/css" />
+</head>
+  <body class="house-live-chamber house-live-chamber_index theme-green">
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar" data-topbar>
+  <section class="left-small">
+      <a href="../index.html"><i class="fa fa-lg fa-chevron-left"></i></a>
+  </section>
+
+  <section class="middle tab-bar-section">
+      <h1 class="title"><a href="../index.html">House Live</a></h1>
+  </section>
+
+  <section class="top-bar-section right context-menu">
+    <ul>
+          <li><a href="../account/signin.html">Sign in</a></li>
+          <li><a href="../account/signup.html">Sign up</a></li>
+        <li><a id="toggle-search" href="#"><i class="fa fa-fw fa-search"></i></a></li>
+    </ul>
+  </section>
+</nav>
+
+<div class="search-bar">
+  <form method="POST" action="../search.html">
+     <div class="row">
+       <div class="medium-6 medium-centered columns">
+         <div class="row collapse">
+           <div class="small-10 medium-11 columns">
+             <input type="text" placeholder="Search terms ..." required="true">
+           </div>
+           <div class="small-2 medium-1 columns">
+             <button type="submit" class="button postfix"><i class="fa fa-fw fa-search"></i></button>
+           </div>
+         </div>
+       </div>
+    </div>
+  </form>
+</div>
+
+<!-- Off Canvas Menu -->
+<aside class="left-off-canvas-menu">
+  <div class="text-center margin-vertical">
+    Tue 25/08/2015
+  </div>
+  <ul class="off-canvas-list">
+    <li><label>ParlWork</label></li>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../senate-live-chamber/index.html">Senate Live</a></li>
+    <li class=" active"><a href="index.html">House Live</a></li>
+    <li><a href="../federation-live-chamber/index.html">Federation Live</a></li>
+    <li><a href="../motions/index.html">Motions</a></li>
+    <li><a href="../bills/index.html">Bills</a></li>
+
+    <li><label>Your account</label></li>
+      <li><a href="../account/signin.html"><i class="fa fa-fw fa-sign-in"></i> Sign in</a></li>
+      <li><a href="../account/signup.html"><i class="fa fa-fw fa-pencil"></i> Sign up</a></li>
+
+  </ul>
+
+  <div class="background-image">
+    <svg version="1.1" id="parliament-house-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197.7 106" enable-background="new 0 0 197.7 106" xml:space="preserve">
+      <path opacity="0.1" fill="#FFFFFF" d="M162.5,65.8v-13h-28.9L104.9,24v-5.4h-2.3v-4h18.2V0h-18.2h-7.4v14.5v4h-2.3V24L64.1,52.9H34.8v13H0V106
+        h34.8H56h98.8h7.8h35.1V65.8H162.5z M15.1,99.6H7.4V73.1h7.6V99.6z M28.2,99.6h-7.6V73.1h7.6V99.6z M49.8,96.5h-7.6V59.4h7.6V96.5z
+         M63,96.5h-7.6V59.4H63V96.5z M76.2,96.5h-7.6V59.4h7.6V96.5z M89.3,96.5h-7.6V72.8h7.6V96.5z M102.5,96.5h-7.6V72.8h7.6V96.5z
+         M107.9,59.3h-5.4V66h-7.6v-6.7h-5.4v-6.4H74.1l21-21v12h7.4v-12l21,21h-15.6V59.3z M115.7,96.5H108V72.8h7.6V96.5z M128.9,96.5
+        h-7.6V59.4h7.6V96.5z M142,96.5h-7.6V59.4h7.6V96.5z M155.2,96.5h-7.6V59.4h7.6V96.5z M177.2,99.6h-7.6V73.1h7.6V99.6z M190.3,99.6
+        h-7.6V73.1h7.6V99.6z"></path>
+    </svg>
+  </div>
+</aside>
+
+
+        <div class="row margin-vertical">
+  <div class="columns">
+    <nav class="breadcrumbs"><a href="../index.html">Home</a> <span class="current">House Live</span></nav>
+  </div>
+</div>
+
+        <div id="content" class="row">
+          <div class="columns">
+            
+
+<div class="panel-container primary">
+  <div class="row collapse">
+    <div class="panel-header">
+      <h3>Current Item of Business</h3>
+      <a class="button round tiny top-right" href="live_minutes.html">Live minutes</a>
+      <!-- <a target='_blank' href="http://www.aph.gov.au/Parliamentary_Business/Chamber_documents/Live_Minutes"  class="button round tiny top-right">Live minutes on APH &nbsp; <i class="fa fa-fw fa-external-link"></i></a> -->
+    </div>
+    <div class="panel">
+        
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">3</span>
+      <span class="label alert round">Live</span>
+    <!-- 
+      <span class="label secondary round">Order</span>
+     -->
+  </div>
+
+  <div class="list-content">
+<a href="social-services-and-other-legislation-amendment-2014-budget-measures-no-5-bill-2014.html">      <h4>Social Services And Other Legislation Amendment (2014 Budget Measures No. 5) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Social Services<br />
+        Second reading—Resumption of debate (from 2 October 2014 — Mr A. S. Burke)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+      <!-- <div class="text-center">
+        <ul class="button-group round margin-top">
+          <li><a href="#" id="refresh-live" class="button tiny"><i class="fa fa-fw fa-refresh"></i> Get latest updates</a></li>
+          <li><a class="button tiny no-margin-bottom" href="live_minutes.html">Live minutes</a></li>
+        </ul>
+      </div>
+      <div class="live-notification text-center no-panel"></div> -->
+    </div>
+  </div>
+</div>
+
+<div class="panel-container">
+  <div class="panel-header">
+    <h3>Daily Program</h3>
+    <a target='_blank' href="http://www.aph.gov.au/PI/dailyprogram"  class="button round tiny top-right">Daily program on APH &nbsp; <i class="fa fa-fw fa-external-link"></i></a>
+  </div>
+
+  <div class="animated-accordion">
+    <div class="animated-accordion-navigation">
+      <a href="#panel-daily-program"><strong>Tuesday 25/08/2015</strong></a>
+      <div id="panel-daily-program" class="content panel no-padding-top">
+        
+  <div class="row border-top">
+    <div class="medium-2 columns">
+      09:00 AM<br>
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Acknowledgement of country</h4>
+      <div class="text-small">
+        
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Prayers</h4>
+      <div class="text-small">
+        
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Government business</h4>
+      <div class="text-small">
+        <p><strong>Notices:</strong></p>
+<p>No. 1 — <strong>Private Health Insurance Amendment Bill (No. 2) 2014</strong> — Mr Dutton (Minister for Health) to present a bill.  First reading.  Second reading to be moved. <br />Debate to be adjourned.</p>
+<p>No. 2 — <strong>Australian Securities and Investments Commission Amendment (Corporations and Markets Advisory Committee Abolition) Bill 2014 —</strong> Mr Ciobo (Parliamentary Secretary to the Treasurer) to present a bill.  First reading.  Second reading to be moved. <br />Debate to be adjourned.</p>
+<p><strong>Without Notice:</strong></p>
+<p><strong>Tax and Superannuation Laws Amendment (2014 Measures No. 7) Bill 2014 —</strong> Mr Ciobo (Parliamentary Secretary to the Treasurer) to present a bill.  First reading.  Second reading to be moved. <br />
+Debate to be adjourned.</p>
+<p><strong>Excess Exploration Credit Tax Bill 2014 —</strong> Mr Ciobo (Parliamentary Secretary to the Treasurer) to present a bill.  First reading.  Second reading to be moved. <br />Debate to be adjourned.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Reports from committees</h4>
+      <div class="text-small">
+        <p><strong>Standing Committee on Infrastructure and Communications —</strong><br />Mrs Prentice (Chair — Ryan) to present the following report and seek leave to make a statement: <br />
+<em>Planning, Procurement and Funding for Australia’s Future Infrastructure—Report on the Inquiry into Infrastructure Planning and Procurement</em>. <br />
+Mrs Prentice to move — That the House take note of the report. <br />
+Debate to be adjourned. <br />
+Mrs Prentice to move — That the order of the day be referred to the Federation Chamber. Question to be put.</p>
+<p><strong>Publications Committee —</strong> Mr Coulton (Chair — Parkes) to present a report (copies available to Members in Chamber). <br />
+Mr Coulton, by leave, to move that the report be agreed to.</p>
+<p><strong>Committee of Privileges and Members’ Interests —</strong> Mr Broadbent (Chair — McMillan) to present the following report from the Committee of Privileges and Members’ Interests: <br />
+<em>Register of Members’ Interest - Notifications of alterations of interests received during the period 16 July 2014 to 2 December 2014.</em></p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Government business - continued</h4>
+      <div class="text-small">
+        <p><strong>Orders of the day</strong></p>
+<p>No. 1 — <strong>Fair Work Amendment (Bargaining Processes) Bill 2014 —</strong> Resumption of debate on second reading. <br />
+Debate to be adjourned.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Ministerial statement, by leave</h4>
+      <div class="text-small">
+        <p>Mr Pyne (Minister for Education) to make a statement on the Government’s achievements in schools and cross-border education.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Government business - continued</h4>
+      <div class="text-small">
+        <p><strong>Notices - continued</strong></p>
+<p>No. 3 — <strong>Suspension of standing orders 31 (Automatic adjournment of the House) and 33 (Limit on business)</strong> — Mr Pyne (Leader of the House) to move motion appearing on the Notice Paper in his name.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Leave of absence</h4>
+      <div class="text-small">
+        <p>Mr Pyne (Leader of the House) to move for leave of absence to all Members.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row border-top">
+    <div class="medium-2 columns">
+      01:30 PM<br>
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Members’ statements</h4>
+      <div class="text-small">
+        <p>Speaker to call on Members’ statements. <br />
+(Each Member — 90 seconds. Total time allotted — 30 minutes)</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row border-top">
+    <div class="medium-2 columns">
+      02:00 PM<br>
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Speaker to call on</h4>
+      <div class="text-small">
+        <p><strong>Questions without notice</strong></p>
+<p><strong>Presentation of documents — Speaker Ministers</strong></p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Matter of public importance</h4>
+      <div class="text-small">
+        <p>If matter submitted, terms will be circulated after 12 noon to Members in the Chamber. Requires support of 8 Members.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Ministerial statement, by leave</h4>
+      <div class="text-small">
+        
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Government business - continued</h4>
+      <div class="text-small">
+        <p><strong>Orders of the day - continued</strong></p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      <span class="label alert round">Live</span>
+    </div>
+
+    <div class="medium-10 columns">
+      <h4></h4>
+      <div class="text-small">
+        <p>No. 2 —  <strong>Social Services and Other Legislation Amendment (2014 Budget Measures No. 5) Bill 2014</strong> — Resumption of debate on second reading. <br />
+Debate to be adjourned.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="medium-2 columns">
+      
+      <span class="order"></span>
+      
+    </div>
+
+    <div class="medium-10 columns">
+      <h4>Messages from the Senate ( when received )</h4>
+      <div class="text-small">
+        <p>An adjournment debate may occur immediately prior to the conclusion of the sitting. <br />
+(The next sitting of the House is expected to commence at 10 am on Monday, 9 February 2015.)</p>
+<p><strong>DAVID ELDER</strong><br />
+Clerk of the House of Representatives
+</p>
+
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-container">
+  <div class="panel-header">
+    <h3>Notice Paper</h3>
+    <a target='_blank' href="http://www.aph.gov.au/Parliamentary_Business/Chamber_documents/HoR/Notice_Paper" class="button round tiny top-right">Notice paper on APH &nbsp; <i class="fa fa-fw fa-external-link"></i></a>
+  </div>
+  <div class="animated-accordion">
+    <div class="animated-accordion-navigation">
+      <a href="#panel1a"><strong>Notices of motions</strong></a>
+      <div id="panel1a" class="content panel">
+        <ul class="tabs" data-tab>
+            <li class="tab-title text-small  active"><a href="#panel1a-government_business">Government Business (2)</a></li>
+            <li class="tab-title text-small "><a href="#panel1a-private_members_business">Private Members Business (2)</a></li>
+            <li class="tab-title text-small "><a href="#panel1a-business_of_the_house">Business Of The House (1)</a></li>
+            <li class="tab-title text-small "><a href="#panel1a-business_accorded_priority">Business Accorded Priority (1)</a></li>
+        </ul>
+
+        <div class="tabs-content">
+            <div class="content active" id="panel1a-government_business">
+              <div class="counter-list">
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">1</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="mr-dutton-luton.html">      <h4>Mr Dutton Luton</h4>
+      <div class="steel text-small">
+        <p>
+        To present a Bill for an Act to amend the Ombudsman Act 1976, and for related purposes. (Private Health Insurance Amendment Bill (No. 2) 2014)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">3</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="mr-pyne-burn.html">      <h4>Mr Pyne Burn</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That standing order 31 (automatic adjournment of the House) and standing order 33 (limit on business) be suspended for the sitting on Thursday, 4 December 2014.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel1a-private_members_business">
+              <div class="counter-list">
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">1</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="mr-brodtmann-smith.html">      <h4>Mr Brodtmann Smith</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That this House: <ol> <li>notes the: <ol type="a"> <li>high degree of satisfaction expressed by clients of Defence Housing Australia (DHA) and the absence of any compelling evidence that the privatisation of DHA would result in an improved service for...</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="mr-brodtmann-kept.html">      <h4>Mr Brodtmann Kept</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That this House: <ol> <li>notes: <ol type="a"> <li>the public admission by the Minister for Defence that he is planning to cut the equivalent of 2,406 full-time Australian Public Service jobs in the Department of Defence over the forward estimates;...</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel1a-business_of_the_house">
+              <div class="counter-list">
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="assistant-minister-for-social-services-2015.html">      <h4>Assistant Minister for Social Services (2015)</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That the provisions of paragraphs (5) to (8) of standing order 111 not apply to the ACT Government Loan Bill 2014, allowing it to be considered during this period of sittings.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel1a-business_accorded_priority">
+              <div class="counter-list">
+                  
+<div class="list-item indented">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="minister-for-social-services-john-smith.html">      <h4>Minister for Social Services John Smith</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That the provisions of paragraphs (5) to (8) of standing order 111 not apply to the ACT Government Loan Bill 2014, allowing it to be considered during this period of sittings.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="animated-accordion-navigation">
+      <a href="#panel2a"><strong>Orders of the Day</strong></a>
+      <div id="panel2a" class="content panel">
+        <ul class="tabs" data-tab>
+            <li class="tab-title text-small  active"><a href="#panel2a-government_business">Government Business (7)</a></li>
+            <li class="tab-title text-small "><a href="#panel2a-private_members_business">Private Members Business (3)</a></li>
+            <li class="tab-title text-small "><a href="#panel2a-business_of_the_house">Business Of The House (1)</a></li>
+            <li class="tab-title text-small "><a href="#panel2a-business_accorded_priority">Business Accorded Priority (1)</a></li>
+            <li class="tab-title text-small "><a href="#panel2a-committee_and_delegation_reports">Committee And Delegation Reports (1)</a></li>
+        </ul>
+
+        <div class="tabs-content">
+            <div class="content active" id="panel2a-government_business">
+              <div class="counter-list">
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">1</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="mr-ciobo-asby.html">      <h4>Mr Ciobo Asby</h4>
+      <div class="steel text-small">
+        <p>
+        To present a Bill for an Act to abolish the Corporations and Markets Advisory Committee, and for related purposes. (Australian Securities and Investments Commission Amendment (Corporations and Markets Advisory Committee Abolition) Bill 2014)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="fair-work-amendment-bargaining-processes-bill-2014.html">      <h4>Fair Work Amendment (bargaining Processes) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister representing the Minister for Employment<br />
+        Second reading—Resumption of debate (from 27 November 2014 — Mr Clare)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">3</span>
+      <span class="label alert round">Live</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="social-services-and-other-legislation-amendment-2014-budget-measures-no-5-bill-2014.html">      <h4>Social Services And Other Legislation Amendment (2014 Budget Measures No. 5) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Social Services<br />
+        Second reading—Resumption of debate (from 2 October 2014 — Mr A. S. Burke)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">4</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="biosecurity-bill-2014.html">      <h4>Biosecurity Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Agriculture<br />
+        Second reading—Resumption of debate (from 27 November 2014 — Mr Clare)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">5</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="biosecurity-consequential-amendments-and-transitional-provisions-bill-2014.html">      <h4>Biosecurity (Consequential Amendments and Transitional Provisions) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Agriculture<br />
+        Second reading—Resumption of debate (from 27 November 2014 — Mr Clare)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">25</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="quarantine-charges-imposition-general-amendment-bill-2014.html">      <h4>Quarantine Charges (Imposition—General) Amendment Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Agriculture<br />
+        Second reading—Resumption of debate (from 27 November 2014 — Mr Husic)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">136</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="broadcasting-and-other-legislation-amendment-deregulation-bill-2014.html">      <h4>Broadcasting and Other Legislation Amendment (Deregulation) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Minister for Communications<br />
+        Second reading—Resumption of debate (from 22 October 2014 — Ms MacTiernan)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel2a-private_members_business">
+              <div class="counter-list">
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">1</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="defence-amendment-parliamentary-approval-of-overseas-service-bill-2014.html">      <h4>Defence Amendment (parliamentary Approval Of Overseas Service) Bill 2014</h4>
+      <div class="steel text-small">
+        <p>Mr Bandt<br />
+        Second reading—Resumption of debate (from 23 June 2014)</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="peter-greste-detention-in-egypt.html">      <h4>Peter Greste—detention In Egypt</h4>
+      <div class="steel text-small">
+        <p>
+        Resumption of debate (from 23 June 2014) on the motion of Mrs Prentice—That this House: <ol> <li>expresses concern at the detention in Egypt of Australian citizen Peter Greste;</li> <li> notes that: <ol type="a"> <li>Mr Greste is detained and currently on...</p>
+      </div>
+</a>  </div>
+
+</div>
+
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">3</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="shipbuilding-industry.html">      <h4>Shipbuilding Industry</h4>
+      <div class="steel text-small">
+        <p>
+        Resumption of debate (from 23 June 2014) on the motion of Ms Parke—That this House: <ol> <li> notes that: <ol type="a"> <li>shipbuilding is an industry that delivers the highest-value and most complex manufacturing outcomes produced in Australia, and therefore represents...</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel2a-business_of_the_house">
+              <div class="counter-list">
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="assistant-minister-for-social-services-2016.html">      <h4>Assistant Minister for Social Services (2016)</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That the provisions of paragraphs (5) to (8) of standing order 111 not apply to the ACT Government Loan Bill 2014, allowing it to be considered during this period of sittings.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel2a-business_accorded_priority">
+              <div class="counter-list">
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="minister-for-social-services-smith-john.html">      <h4>Minister for Social Services Smith John</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That the provisions of paragraphs (5) to (8) of standing order 111 not apply to the ACT Government Loan Bill 2014, allowing it to be considered during this period of sittings.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+            <div class="content" id="panel2a-committee_and_delegation_reports">
+              <div class="counter-list">
+                  
+<div class="list-item ">
+  <div class="right">
+    <a href="#" class="toggle-favourite" title="Add to favourite"><i class="fa fa-lg fa-star-o"></i></a>
+  </div>
+
+  <div class="list-order">
+    <span class="order">2</span>
+    <!--  -->
+  </div>
+
+  <div class="list-content">
+<a href="minister-for-social-services-smith-john-2014.html">      <h4>Minister for Social Services Smith John (2014)</h4>
+      <div class="steel text-small">
+        <p>
+        To move—That the provisions of paragraphs (5) to (8) of standing order 111 not apply to the ACT Government Loan Bill 2014, allowing it to be considered during this period of sittings.</p>
+      </div>
+</a>  </div>
+
+</div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row margin-top">
+  <div class="columns text-right">
+    <a href="#" id="back-to-top" class="button secondary small" title="Back to top"><span class="visually-hidden">Back to top</span><i class="fa fa-chevron-up"></i></a>
+  </div>
+</div>
+
+
+<footer class="border-top">
+  <div class="row">
+    <div class="columns">
+      <div class="row">
+        <div class="medium-7 columns">
+          <ul class="inline-list text-small">
+              <li><a href="../accessibility.html">Accessibility</a></li>
+              <li><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
+              <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="medium-5 columns text-right">
+          <p class="text-small">&copy; Department of Parliamentary Services</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="../assets/javascripts/all.js" type="text/javascript"></script>
+
+
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//P59741/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//P59741/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+  </body>
+</html>
