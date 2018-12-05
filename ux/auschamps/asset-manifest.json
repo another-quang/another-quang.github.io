@@ -1,7 +1,7 @@
 {
   "main.css": "/ux/auschamps/static/css/main.5d2ba469.chunk.css",
-  "main.js": "/ux/auschamps/static/js/main.a6cf7a36.chunk.js",
-  "main.js.map": "/ux/auschamps/static/js/main.a6cf7a36.chunk.js.map",
+  "main.js": "/ux/auschamps/static/js/main.549d0aca.chunk.js",
+  "main.js.map": "/ux/auschamps/static/js/main.549d0aca.chunk.js.map",
   "static/css/1.c8ef90fb.chunk.css": "/ux/auschamps/static/css/1.c8ef90fb.chunk.css",
   "static/js/1.2d784092.chunk.js": "/ux/auschamps/static/js/1.2d784092.chunk.js",
   "static/js/1.2d784092.chunk.js.map": "/ux/auschamps/static/js/1.2d784092.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.5d2ba469.chunk.css.map": "/ux/auschamps/static/css/main.5d2ba469.chunk.css.map",
   "static/css/1.c8ef90fb.chunk.css.map": "/ux/auschamps/static/css/1.c8ef90fb.chunk.css.map",
   "index.html": "/ux/auschamps/index.html",
-  "precache-manifest.cc67ecea471c33cdd19bd3cd3547b362.js": "/ux/auschamps/precache-manifest.cc67ecea471c33cdd19bd3cd3547b362.js",
+  "precache-manifest.bf8d798daa9eca684d8a1527717c5567.js": "/ux/auschamps/precache-manifest.bf8d798daa9eca684d8a1527717c5567.js",
   "service-worker.js": "/ux/auschamps/service-worker.js"
 }
